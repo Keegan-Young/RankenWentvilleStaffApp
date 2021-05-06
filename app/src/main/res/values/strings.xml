@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">RankenWentzvilleStaff</string>
+    <string name="main_title">Ranken Wentzville Staff</string>
+    <string name="btnAddOrEdit">Add or Edit Member</string>
+    <string name="textViewID">ID:</string>
+    <string name="textViewFirstName">First Name:</string>
+    <string name="textViewLastName">Last Name:</string>
+    <string name="textViewDepartName">Department Name:</string>
+    <string name="textViewImageURL">URL:</string>
+    <string name="textViewIDHint">#ID</string>
+    <string name="editTextFNameHint">First Name</string>
+    <string name="editTextLNameHint">Last Name</string>
+    <string name="editTextDepartNameHint">Department Name</string>
+    <string name="editTextImageURLHint">URL</string>
+    <string name="btnSave">Save</string>
+    <string name="btnCancel">Cancel</string>
+    <string name="textViewStaffFirstName">First Name</string>
+    <string name="textViewStaffLastName">Last Name</string>
+    <string name="textViewStaffDepartmentName">Department Name</string>
+    <string name="imageViewContentDescription">Staff Member Picture</string>
+    <string name="lastNameAscendingMnu">Last Name Ascending</string>
+    <string name="lastNameDescendingMnu">Last Name Descending</string>
+    <string name="departmentNameAscending">Department Ascending</string>
+    <string name="departmentNameDescending">Department Descending</string>
+</resources>

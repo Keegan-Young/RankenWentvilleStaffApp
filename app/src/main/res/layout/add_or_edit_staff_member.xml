@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tvID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="64dp"
+        android:text="@string/textViewID"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvFirstName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="18dp"
+        android:text="@string/textViewFirstName"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvID" />
+
+    <TextView
+        android:id="@+id/tvLastName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="30dp"
+        android:text="@string/textViewLastName"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvFirstName" />
+
+    <TextView
+        android:id="@+id/tvDepartmentName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="30dp"
+        android:text="@string/textViewDepartName"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvLastName" />
+
+    <TextView
+        android:id="@+id/tvImageURL"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="32dp"
+        android:text="@string/textViewImageURL"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvDepartmentName" />
+
+    <EditText
+        android:id="@+id/etDepartmentName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="@string/editTextDepartNameHint"
+        android:inputType="textPersonName"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.037"
+        app:layout_constraintStart_toEndOf="@+id/tvDepartmentName"
+        app:layout_constraintTop_toBottomOf="@+id/etLastName" />
+
+    <EditText
+        android:id="@+id/etLastName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="64dp"
+        android:layout_marginLeft="64dp"
+        android:layout_marginTop="7dp"
+        android:ems="10"
+        android:hint="@string/editTextLNameHint"
+        android:inputType="textPersonName"
+        android:textSize="14sp"
+        app:layout_constraintStart_toEndOf="@+id/tvLastName"
+        app:layout_constraintTop_toBottomOf="@+id/etFirstName" />
+
+    <EditText
+        android:id="@+id/etFirstName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="64dp"
+        android:layout_marginLeft="64dp"
+        android:layout_marginTop="6dp"
+        android:ems="10"
+        android:hint="@string/editTextFNameHint"
+        android:inputType="textPersonName"
+        android:textSize="14sp"
+        app:layout_constraintStart_toEndOf="@+id/tvFirstName"
+        app:layout_constraintTop_toBottomOf="@+id/tvNoEditID" />
+
+    <EditText
+        android:id="@+id/etImageURL"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="113dp"
+        android:layout_marginLeft="113dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="@string/editTextImageURLHint"
+        android:inputType="textPersonName"
+        android:textSize="14sp"
+        app:layout_constraintStart_toEndOf="@+id/tvImageURL"
+        app:layout_constraintTop_toBottomOf="@+id/etDepartmentName" />
+
+    <Button
+        android:id="@+id/btnSave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="70dp"
+        android:layout_marginLeft="70dp"
+        android:layout_marginTop="34dp"
+        android:text="@string/btnSave"
+        app:backgroundTint="@android:color/holo_red_light"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvImageURL" />
+
+    <Button
+        android:id="@+id/btnCancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="@string/btnCancel"
+        app:backgroundTint="@android:color/holo_red_light"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnSave"
+        app:layout_constraintTop_toBottomOf="@+id/etImageURL" />
+
+    <TextView
+        android:id="@+id/tvNoEditID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="126dp"
+        android:layout_marginLeft="126dp"
+        android:layout_marginTop="67dp"
+        android:text="@string/textViewIDHint"
+        android:textSize="14sp"
+        app:layout_constraintStart_toEndOf="@+id/tvID"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
